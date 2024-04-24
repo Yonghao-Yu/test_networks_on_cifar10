@@ -7,16 +7,18 @@ class MLP(nn.Module):
         super().__init__()
         self.fc = nn.Sequential(
             nn.Linear(img_size * img_size * in_chans, 2048),
+            nn.LayerNorm(2048),
             nn.ReLU(),
             nn.Linear(2048, 1024),
+            nn.LayerNorm(1024),
             nn.ReLU(),
             nn.Linear(1024, 512),
+            nn.LayerNorm(512),
             nn.ReLU(),
             nn.Linear(512, 248),
+            nn.LayerNorm(248),
             nn.ReLU(),
-            nn.Linear(248, 124),
-            nn.ReLU(),
-            nn.Linear(124, 10)
+            nn.Linear(248, 10)
         )
 
     def forward(self, x):
