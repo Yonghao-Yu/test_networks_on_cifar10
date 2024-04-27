@@ -23,17 +23,10 @@ pip install timm
 ```
 
 ## train
-有三个模型可选，一个是自己搭的 toy 的 mlp，第二个和第三个分别是 torchvision 官方实现的 vgg19 和 resnet34
+有**3**个**model**可选，一个是自己搭的 toy 的 **mlp**，第二个和第三个分别是 torchvision 官方实现的 **vgg19** 和 **resnet34**
+有**2**个优化器可选，一个是**sgd**另一个是**adamw**
 
-train mlp
+例：
 ```bash
 python main.py --batch_size 128 --epochs 100 --data_path path/to/cifar10 --model mlp --opt sgd --lr 5e-4
-```
-train vgg19
-```bash
-python main.py --batch_size 128 --epochs 100 --data_path path/to/cifar10 --model vgg19 --opt sgd --lr 5e-4
-```
-train resnet34
-```bash
-python main.py --batch_size 128 --epochs 100 --data_path path/to/cifar10 --model resnet34 --opt sgd --lr 5e-4
 ```
