@@ -1,10 +1,8 @@
 # test_networks_on_cifar10
 
 ## 说在前面
-这个项目的目的是完成深度学习作业，我们的作业要求如下：
-
-cifar-10分类：分别使用MLP，CNN等共三个基础网络（例如选择MLP和ResNet，VGG-Net共三个）测试学习率、优化器选择的 影响，并绘制loss曲线。<br><br>
-
+这个项目的目的是完成深度学习作业，我们的作业要求如下：<br>
+cifar-10分类：分别使用MLP，CNN等共三个基础网络（例如选择MLP和ResNet，VGG-Net共三个）测试学习率、优化器选择的 影响，并绘制loss曲线。<br>
 基于这个要求所做的项目报告在[**[这里]**](实验报告.md)。
 
 ## 环境搭建
@@ -23,7 +21,7 @@ pip install timm
 ```
 
 ## train
-有**3**个**model**可选，一个是自己搭的 toy 的 **mlp**，第二个和第三个分别是 torchvision 官方实现的 **vgg19** 和 **resnet34**
+有**3**个**model**可选，一个是自己搭的 toy 的 **mlp**，第二个和第三个分别是 torchvision 官方实现的 **vgg19** 和 **resnet34**<br>
 有**2**个优化器可选，一个是**sgd**另一个是**adamw**
 
 例：
